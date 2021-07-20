@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="PARC" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/PARC" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/PARC" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Plan_Library/extendedPlanLibrary.cpp" />
+		<Unit filename="Plan_Library/planLibrary.cpp" />
+		<Unit filename="Plan_Library/probabilityDistribution.cpp" />
+		<Unit filename="Plan_Library/rule.cpp" />
+		<Unit filename="include/bnflite.h" />
+		<Unit filename="include/extendedPlanLibrary.h" />
+		<Unit filename="include/planLibrary.h" />
+		<Unit filename="include/probabilityDistribution.h" />
+		<Unit filename="include/rule.h" />
+		<Unit filename="include/solver.h" />
+		<Unit filename="include/testSolver.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/solver/solver.cpp" />
+		<Unit filename="src/solver/testSolver.cpp" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
